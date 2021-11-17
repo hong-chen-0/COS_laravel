@@ -18,6 +18,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::any('test','CosController@test');
+Route::any('addFolder','CosController@addFolder');
 
-Route::any('test2','CosController@test2');
+Route::any('addFile','CosController@addFile');

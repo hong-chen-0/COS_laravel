@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 
 class CosController extends Controller
 {
-  public function test(Request $request){
+  public function addFolder(Request $request){
     $this->COScreateFolder();
   }
-  public function test2(Request $request){
+  public function addFile(Request $request){
     $this->COSaddFile('./img/blue.jpg');
   }
 }

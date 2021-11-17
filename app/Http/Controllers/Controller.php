@@ -54,7 +54,7 @@ class Controller extends BaseController
     try {
       $result = $cosClient->putObject(array(
         'Bucket' => getenv('COS_BUCKET'), //格式：BucketName-APPID
-        'Key' => 'cc2', //存储为
+        'Key' => 'blue_copy', //存储为
         'Body' => fopen($local_path, 'rb'),//文件地址
       ));
       // 请求成功
